@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .cards-container {
   background: #f6f6f6;
   width: 1240px;
@@ -12,8 +11,7 @@
   margin: 43px 0;
   padding: 40px 0;
 }
-
-.card-content {
+.cards-container .card-content {
   width: 340px;
   height: 340px;
   position: relative;
@@ -24,37 +22,33 @@
   margin-bottom: 20px;
   transition: all 0.5s ease;
 }
-
-.card-content:hover {
+.cards-container .card-content:hover {
   cursor: pointer;
   transform: scale(1.05);
   filter: blur(0.8px);
 }
-
-.card-cover {
+.cards-container .card-content .card-cover {
   width: 340px;
   height: 340px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   mix-blend-mode: darken;
   filter: brightness(0.85);
 }
-
-.card-title-container {
+.cards-container .card-content .card-title-container {
   position: absolute;
   width: 300px;
   height: 60px;
   display: flex;
   align-items: center;
   top: 275px;
-  
 }
-
-.card-title {
+.cards-container .card-content .card-title-container .card-title {
   color: white;
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-}
+}/*# sourceMappingURL=Cards.css.map */

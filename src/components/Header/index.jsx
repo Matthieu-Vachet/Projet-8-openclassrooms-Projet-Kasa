@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import KasaLogo from '../../assets/logo/logo.svg'
-import '../../Style/Header/style.css'
+import '../../style/Header/Header.css'
 
 function Header() {
   const location = useLocation()

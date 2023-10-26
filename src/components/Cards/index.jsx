@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import '../../Style/Cards/style.css'
+import '../../style/Cards/Cards.css'
 
 function Cards({ title, picture }) {
   return (

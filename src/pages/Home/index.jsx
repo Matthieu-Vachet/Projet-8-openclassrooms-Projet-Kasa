@@ -1,8 +1,8 @@
 import Background from '../../components/Background'
 import Cards from '../../components/Cards'
 import Data from '../../datas/logements.json'
-import '../../Style/Home/style.css'
-import '../../Style/Cards/style.css'
+import '../../style/Home/Home.css'
+import '../../style/Cards/Cards.css'
 
 function Home() {
   return (
