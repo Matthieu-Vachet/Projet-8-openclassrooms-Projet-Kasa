@@ -1,4 +1,5 @@
 import ImageBackground from '../../assets/images/IMG.svg'
+import '../../style/Reset/Reset.css'
 import '../../style/Background/Background.css'
 
 function Background() {

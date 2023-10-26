@@ -1,3 +1,5 @@
+import '../../style/Reset/Reset.css'
+
 function Error () {
     return (
         <div>

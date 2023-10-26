@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import '../../style/Reset/Reset.css'
 import '../../style/Cards/Cards.css'
 
 function Cards({ title, picture }) {

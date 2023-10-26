@@ -1,3 +1,5 @@
+import '../../style/Reset/Reset.css'
+
 function Apropos() {
     return (
         <div>

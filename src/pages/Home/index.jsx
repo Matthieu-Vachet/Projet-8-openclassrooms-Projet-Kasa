@@ -1,6 +1,7 @@
 import Background from '../../components/Background'
 import Cards from '../../components/Cards'
 import Data from '../../datas/logements.json'
+import '../../style/Reset/Reset.css'
 import '../../style/Home/Home.css'
 import '../../style/Cards/Cards.css'
 
