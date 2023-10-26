@@ -3,6 +3,11 @@ import KasaLogo from '../../assets/logo/logo.svg'
 import '../../style/Reset/Reset.css'
 import '../../style/Header/Header.css'
 
+/**
+ * Retourne l'en-tête (Header) avec un logo et des liens de navigation.
+ * @returns {JSX.Element} L'en-tête.
+ */
+
 function Header() {
   const location = useLocation()
 
