@@ -1,8 +1,24 @@
+import Background from '../../components/Background'
+import Cards from '../../components/Cards'
+import Data from '../../datas/logements.json'
+import '../../Style/Home/style.css'
+import '../../Style/Cards/style.css'
+
 function Home() {
-    return <div>
-      <h1>{`Page d'accueil`}</h1>
+  return (
+    <div className="home-container"> 
+      <Background />
+      <div className="cards-container">
+        {Data.map((logements, index) => (
+          <Cards
+            key={`${logements.id}-${index}`}
+            title={logements.title}
+            picture={logements.cover}
+          />
+        ))}
       </div>
-  }
-  
-  export default Home
-  
+    </div>
+  )
+}
+
+export default Home

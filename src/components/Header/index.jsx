@@ -1,12 +1,33 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import KasaLogo from '../../assets/logo/logo.svg'
+import '../../Style/Header/style.css'
 
-function header() {
-    return (
-        <nav>
-            <Link to= "/">Acceuil</Link>
-            <Link to= "/apropos">A propos</Link>
-        </nav>
-    )
+function Header() {
+  const location = useLocation()
+
+  return (
+    <nav className="header-container">
+      <Link to="/">
+        <img className="header-logo" src={KasaLogo} alt="Logo Kasa" />
+      </Link>
+      <div className="header-link">
+        <Link
+          className={`text-link ${location.pathname === '/' ? 'active' : ''}`}
+          to="/"
+        >
+          Acceuil
+        </Link>
+        <Link
+          className={`text-link ${
+            location.pathname === '/apropos' ? 'active' : ''
+          }`}
+          to="/apropos"
+        >
+          A propos
+        </Link>
+      </div>
+    </nav>
+  )
 }
 
-export default header
+export default Header
