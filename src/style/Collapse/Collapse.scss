@@ -1,0 +1,70 @@
+@import '../Variables_Mixins/Variables_Mixins.scss';
+
+.collapse-container {
+    width: 1023px;
+    @include flexbox(column, center, none);
+    margin-bottom: 38px;
+
+    .collapse-title {
+        color: white;
+        width: 100%;
+        @include flexbox(row, space-between, center);
+        background-color: $primary-color;
+        border-radius: 5px;
+
+        p {
+            @include font-montserrat-500(24px, white, 142.6%);
+            margin: 10px 0 10px 15px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            font-size: 30px;
+            margin-right: 20px; 
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            &:hover {
+                scale: 1.2;
+            }
+
+            &.close {
+                transform: rotate(0deg);
+            }
+
+            &.open {
+                transform: rotate(180deg);
+            }
+            
+        }
+    }
+
+    .collapse-content {
+        width: 100%;
+        @include font-montserrat(18px, $primary-color, 142.6%, none);
+        background-color: $secondary-color;
+        border-radius: 5px;
+        z-index: 1;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-out;
+
+        &.close {
+            max-height: 0;
+        }
+
+        &.open {
+            max-height: 500px;
+        }
+
+        p {
+            padding: 20px;
+        }
+    }
+}
