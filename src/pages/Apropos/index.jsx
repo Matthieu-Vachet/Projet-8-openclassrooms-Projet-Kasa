@@ -1,8 +1,8 @@
 import '../../style/Reset/Reset.css'
 import '../../style/Apropos/Apropos.css'
-import Footer from '../../components/Footer'
 import TopBackground from '../../components/TopBackground'
 import Collapse from '../../components/Collapse'
+import Footer from '../../components/Footer'
 import ImageBackground from '../../assets/images/Montagnes.svg'
 
 function Apropos() {
@@ -33,6 +33,7 @@ function Apropos() {
           />
         </div>
       </main>
+      {/* Composant bas de page (Footer) */}
       <Footer />
     </div>
   )

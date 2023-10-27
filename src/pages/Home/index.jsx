@@ -29,6 +29,7 @@ function Home() {
           />
         ))}
       </div>
+      {/* Composant bas de page (Footer) */}
       <Footer />
     </div>
   )
