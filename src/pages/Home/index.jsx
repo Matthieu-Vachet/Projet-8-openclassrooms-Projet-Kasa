@@ -1,6 +1,8 @@
-import Background from '../../components/Background'
+import TopBackground from '../../components/TopBackground'
 import Cards from '../../components/Cards'
+import Footer from '../../components/Footer'
 import Data from '../../datas/logements.json'
+import ImageBackground from '../../assets/images/IMG.svg'
 import '../../style/Reset/Reset.css'
 import '../../style/Home/Home.css'
 import '../../style/Cards/Cards.css'
@@ -13,7 +15,11 @@ import '../../style/Cards/Cards.css'
 function Home() {
   return (
     <div className="home-container">
-      <Background />
+      <TopBackground
+        picture={ImageBackground}
+        alt="Image de falaise"
+        title="Chez vous, partout et ailleurs"
+      />
       <div className="cards-container">
         {Data.map((logements, index) => (
           <Cards
@@ -23,6 +29,7 @@ function Home() {
           />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
