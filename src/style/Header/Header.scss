@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import '../Variables_Mixins/Variables_Mixins.scss';
+
 
 .header-container {
-  display: flex;
-  align-items: center;
+  @include flexbox(row, center, center);
   width: 100%;
-  justify-content: center;
   gap: 700px;
   margin-top: 45px;
   margin-bottom: 50px;
@@ -17,18 +16,13 @@
   }
 
   .header-link {
-    display: flex;
-    align-items: flex-start;
+    @include flexbox(row, flex-start, center);
     gap: 57px;
 
     .text-link {
-      color: #ff6060;
+      @include font-montserrat-500(24px, $primary-color, 142.6%);
       width: 136px;
       text-align: right;
-      font-family: Montserrat;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
       text-decoration: none;
 
       &.active {

@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .footer-container {
   background-color: black;
   width: 100%;
   height: 209px;
+  display: flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -16,16 +18,17 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   width: 513px;
   height: 46px;
   padding-top: 29px;
 }
 .footer-container .footer-text-container .footer-text {
-  color: white;
-  text-align: center;
-  font-family: Montserrat;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
+  color: white;
   line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  text-align: center;
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .header-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  justify-content: center;
   gap: 700px;
   margin-top: 45px;
   margin-bottom: 50px;
@@ -16,17 +17,20 @@
 }
 .header-container .header-link {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 57px;
 }
 .header-container .header-link .text-link {
+  font-size: 24px;
   color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
   width: 136px;
   text-align: right;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
   text-decoration: none;
 }
 .header-container .header-link .text-link.active {
