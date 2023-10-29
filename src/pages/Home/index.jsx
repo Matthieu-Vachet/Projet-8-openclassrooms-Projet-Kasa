@@ -3,9 +3,9 @@ import Cards from '../../components/Cards'
 import Footer from '../../components/Footer'
 import Data from '../../datas/logements.json'
 import ImageBackground from '../../assets/images/IMG.svg'
-import '../../style/Reset/Reset.css'
-import '../../style/Home/Home.css'
-import '../../style/Cards/Cards.css'
+// import '../../style/Reset/Reset.css'
+// import '../../style/pages/Home/Home.css'
+// import '../../style/components/Cards/Cards.css'
 
 /**
  * Retourne la page d'accueil avec une image de fond (Background), des cartes de logements (Cards) et des données provenant d'un fichier JSON.

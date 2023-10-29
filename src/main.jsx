@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Apropos from './pages/Apropos'
 import Error from './pages/Error'
 import Header from './components/Header'
+import './style/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,4 +1,4 @@
-import '../../style/Reset/Reset.css'
+// import '../../style/Reset/Reset.css'
 
 function Error () {
     return (

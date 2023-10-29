@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import '../../style/Reset/Reset.css'
-import '../../style/Cards/Cards.css'
+// import '../../style/Reset/Reset.css'
+// import '../../style/components/Cards/Cards.css'
 
 /**
  * Retourne un composant Cards (Carte) avec une image et un titre

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import '../../style/Reset/Reset.css'
-import '../../style/TopBackground/TopBackground.css'
+// import '../../style/Reset/Reset.css'
+// import '../../style/components/TopBackground/TopBackground.css'
 
 /**
  * Composant avec image sous header.
