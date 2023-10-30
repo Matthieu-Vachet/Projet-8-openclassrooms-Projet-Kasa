@@ -1,5 +1,9 @@
-// import '../../style/components/Footer/Footer.css'
 import LogoFooter from '../../assets/logo/logoFooter.png'
+
+/**
+ * Retourne le composant du footer avec le logo et le texte de copyright.
+ * @returns {JSX.Element} Le composant du footer.
+ */
 
 function Footer() {
   return (

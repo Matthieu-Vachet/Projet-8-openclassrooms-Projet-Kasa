@@ -1,11 +1,17 @@
-// import '../../style/Reset/Reset.css'
+import Error404 from '../../components/Error404'
+import Footer from '../../components/Footer'
 
-function Error () {
-    return (
-        <div>
-            <h1>{`Erreur 404`}</h1>
-        </div>
-    )
+function Error() {
+  return (
+    <div>
+      <main>
+        <Error404 />
+      </main>
+      <Footer>
+        <Footer />
+      </Footer>
+    </div>
+  )
 }
 
 export default Error

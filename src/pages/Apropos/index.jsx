@@ -1,5 +1,3 @@
-// import '../../style/Reset/Reset.css'
-// import '../../style/pages/Apropos/Apropos.css'
 import TopBackground from '../../components/TopBackground'
 import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'

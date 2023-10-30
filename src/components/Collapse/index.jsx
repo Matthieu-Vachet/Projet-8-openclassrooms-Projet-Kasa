@@ -1,8 +1,16 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-// import '../../style/components/Collapse/Collapse.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
+
+/**
+ * Retourne un composant de collapse avec un titre et un contenu.
+ * @param {string} name - Le titre du collapse.
+ * @param {string} content - Le contenu du collapse.
+ * @returns {JSX.Element} Le composant de collapse.
+ */
+
 
 function Collapse({ name, content }) {
   const [isOpen, setIsOpen] = useState(true)
