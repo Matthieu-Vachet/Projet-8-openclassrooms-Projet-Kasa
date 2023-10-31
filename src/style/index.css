@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 html,
 body,
 div,
@@ -417,17 +418,9 @@ table {
 
 .carousel {
   position: relative;
-  width: 1240px;
-  margin-top: 50px;
   margin-bottom: 30px;
 }
-.carousel .carousel-container {
-  border-radius: 25px;
-  width: 1240px;
-  position: relative;
-  height: 415px;
-}
-.carousel .prevButton {
+.carousel .previousButton {
   position: absolute;
   z-index: 2;
   height: 415px;
@@ -435,6 +428,33 @@ table {
   font-size: 70px;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel .previousButton:hover {
+  transform: scale(1.1);
+}
+.carousel .carousel-container {
+  border-radius: 25px;
+  width: 1240px;
+  position: relative;
+  height: 415px;
+}
+.carousel .carousel-container .carousel-img {
+  height: 415px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: opacity 0.5s ease 0s;
+  width: 100%;
+}
+.carousel .carousel-container .carousel-img .setImg {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carousel .nextButton {
   position: absolute;
@@ -446,119 +466,45 @@ table {
   font-size: 70px;
   color: white;
   border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.carousel .nextButton:hover {
+  transform: scale(1.1);
 }
 .carousel .carousel-counter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 25px;
   left: 0px;
   z-index: 2;
   width: 100%;
-  color: white;
-  font-family: #ff6060;
   font-size: 18px;
+  color: white;
+  line-height: 142.6%;
   font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
 }
-.carousel .settingsImg {
-  border-radius: 25px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+
+.title-Logement h1 {
+  font-size: 36px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
 }
-.carousel .carousel-container-img {
-  height: 415px;
-  z-index: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: opacity 0.5s ease 0s;
-  width: 100%;
-}
-.carousel .carousel-container-img-c67ab8a7-1 {
-  -o-object-position: center 80%;
-     object-position: center 80%;
-}
-.carousel .carousel-container-img-c67ab8a7-2 {
-  -o-object-position: center 62%;
-     object-position: center 62%;
-}
-.carousel .carousel-container-img-c67ab8a7-3 {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel .carousel-container-img-c67ab8a7-4 {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel .carousel-container-img-c67ab8a7-5 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 62%;
-     object-position: center 62%;
-}
-.carousel .carousel-container-img-b9123946-1 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 70%;
-     object-position: center 70%;
-}
-.carousel .carousel-container-img-b9123946-2 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 70%;
-     object-position: center 70%;
-}
-.carousel .carousel-container-img-b9123946-3 {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel .carousel-container-img-b9123946-4 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 30%;
-     object-position: center 30%;
-}
-.carousel .carousel-container-img-b9123946-5 {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel .carousel-container-img-b9123946-6 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center 40%;
-     object-position: center 40%;
-}
-.carousel .custom-arrow-prev {
-  border: none;
-  font-size: 80px;
-  color: white;
-  background: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-  height: 100%;
-}
-.carousel .custom-arrow-prev:hover {
-  cursor: pointer;
-}
-.carousel .custom-arrow-next {
-  border: none;
-  font-size: 80px;
-  color: white;
-  background: none;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 100%;
-}
-.carousel .custom-arrow-next:hover {
-  cursor: pointer;
-}
-.carousel .carousel-status {
-  color: red;
+.title-Logement p {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
 }
 
 .collapse-container-apropos {
@@ -580,6 +526,7 @@ table {
 
 .main-logement {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
