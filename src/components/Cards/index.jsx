@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { NavLink } from 'react-router-dom'
 /**
  * Retourne un composant Cards (Carte) avec une image et un titre
  * @param {Object} props - Les propriétés de la carte.
@@ -7,13 +8,15 @@ import PropTypes from 'prop-types'
  * @returns {JSX.Element} Le composant de carte.
  */
 
-function Cards({ title, picture }) {
+function Cards({ title, picture, id }) {
   return (
     <div className="card-content">
+      <NavLink to={`/Logements/${id}`}>
       <img className="card-cover" src={picture} alt={title} />
       <div className="card-title-container">
         <span className="card-title">{title}</span>
       </div>
+      </NavLink>
     </div>
   )
 }
@@ -21,6 +24,7 @@ function Cards({ title, picture }) {
 Cards.propTypes = {
   title: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 }
 
 Cards.defaultProps = {

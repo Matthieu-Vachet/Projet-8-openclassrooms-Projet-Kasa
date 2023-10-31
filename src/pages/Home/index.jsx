@@ -21,6 +21,7 @@ function Home() {
         {Data.map((logements, index) => (
           <Cards
             key={`${logements.id}-${index}`}
+            id={logements.id}
             title={logements.title}
             picture={logements.cover}
           />
