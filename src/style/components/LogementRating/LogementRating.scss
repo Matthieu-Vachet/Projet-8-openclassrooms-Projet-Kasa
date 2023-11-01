@@ -1,0 +1,14 @@
+
+.logement-rating {
+    display: flex;
+    font-size: 25px;
+
+    .star {
+        margin-left: 10px;
+        color: $primary-color;
+    }
+
+    .star-empty {
+        color: $star-empty;
+    }
+}
