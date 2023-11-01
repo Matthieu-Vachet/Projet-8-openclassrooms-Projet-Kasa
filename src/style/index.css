@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 html,
 body,
 div,
@@ -490,7 +497,7 @@ table {
   font-family: "Montserrat";
 }
 
-.title-Logement h1 {
+.title-logement h1 {
   font-size: 36px;
   color: #ff6060;
   line-height: 142.6%;
@@ -498,13 +505,45 @@ table {
   font-style: normal;
   font-family: "Montserrat";
 }
-.title-Logement p {
+.title-logement p {
   font-size: 18px;
   color: #ff6060;
   line-height: 142.6%;
   font-weight: 500;
   font-style: normal;
   font-family: "Montserrat";
+}
+
+.logement-profil-container {
+  width: 167px;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 21px;
+}
+.logement-profil-container .host-name {
+  font-size: 18px;
+  color: #ff6060;
+  line-height: 142.6%;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Montserrat";
+  text-align: right;
+  margin: 0;
+}
+.logement-profil-container .host-picture {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
 }
 
 .collapse-container-apropos {

@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/logements.json";
+import '../../style/components/LogementTag/LogementTag.scss'
+
 
 function LogementTag() {
 
@@ -7,9 +9,9 @@ function LogementTag() {
     const logements = data.find(logement => logement.id === id);
 
     return (
-        <div>
+        <div className="logements-tags-container">
             {logements.tags.map((tag, index) => (
-                <span key={index} className="user-tag">{tag}</span>
+                <span key={index} className="logements-tag">{tag}</span>
             ))}
         </div>
     )

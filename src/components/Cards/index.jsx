@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
+import '../../style/components/Cards/Cards.scss'
 /**
  * Retourne un composant Cards (Carte) avec une image et un titre
  * @param {Object} props - Les propriétés de la carte.
@@ -24,7 +25,7 @@ function Cards({ title, picture, id }) {
 Cards.propTypes = {
   title: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 }
 
 Cards.defaultProps = {

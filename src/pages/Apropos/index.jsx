@@ -2,6 +2,7 @@ import TopBackground from '../../components/TopBackground'
 import Collapse from '../../components/Collapse'
 import Footer from '../../components/Footer'
 import ImageBackground from '../../assets/images/Montagnes.svg'
+import '../../style/pages/Apropos/Apropos.scss'
 
 function Apropos() {
   return (

@@ -3,6 +3,7 @@ import data from "../../datas/logements.json"
 import FicheLogements from "../../components/FicheLogements"
 import Footer from "../../components/Footer"
 import Error404 from "../../components/Error404"
+import '../../style/pages/Logements/Logements.scss'
 
 function LogementPage() {
   const { id } = useParams()

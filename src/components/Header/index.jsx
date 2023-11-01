@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import KasaLogo from '../../assets/logo/logo.svg'
+import '../../style/components/Header/Header.scss'
 
 /**
  * Retourne l'en-tête (Header) avec un logo et des liens de navigation.

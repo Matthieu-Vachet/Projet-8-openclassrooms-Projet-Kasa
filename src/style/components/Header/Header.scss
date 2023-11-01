@@ -1,4 +1,4 @@
-
+@import "../../Variables_Mixins/Variables_Mixins.scss";
 
 .header-container {
   @include flexbox(row, center, center);

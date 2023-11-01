@@ -1,7 +1,7 @@
-@import "./Reset/Reset";
-@import "./Variables_Mixins/Variables_Mixins";
+@import './Reset/Reset';
+@import './Variables_Mixins/Variables_Mixins';
 
-@import "./Components/Cards/Cards";
+@import './Components/Cards/Cards';
 @import './Components/Collapse/Collapse';
 @import './Components/Footer/Footer';
 @import './Components/Header/Header';
@@ -9,6 +9,9 @@
 @import './Components/Error404/Error404';
 @import './Components/Carrousel/Carrousel';
 @import './Components/TitleLogement/TitleLogement';
+@import './Components/LogementProfil/LogementProfil';
+@import './Components/FicheLogements/FicheLogements';
+@import './Components/LogementRating/LogementRating';
 
 @import './Pages/Apropos/Apropos';
 @import './Pages/Home/Home';
