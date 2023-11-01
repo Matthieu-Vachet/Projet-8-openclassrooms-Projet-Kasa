@@ -1,5 +1,0 @@
-@import '../../Variables_Mixins/Variables_Mixins.scss';
-
-.first-container {
-    @include flexbox(row, space-between, none);
-}
