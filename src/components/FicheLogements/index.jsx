@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import data from "../../datas/logements.json";
 import Carrousel from "../Carrousel"
 import TitleLogement from "../TitleLogement";
+import LogementTag from "../LogementTags";
 
 const FicheLogement = () => {
 
@@ -14,6 +15,7 @@ const FicheLogement = () => {
         
         <div>
             <TitleLogement title={logements.title} subtitle={logements.location} />
+            <LogementTag />
         </div>
         </div>
 
