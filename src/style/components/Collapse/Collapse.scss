@@ -1,7 +1,7 @@
-
+@import '../../Variables_Mixins/Variables_Mixins.scss';
 .collapse-container {
     width: 1023px;
-    @include flexbox(column, center, none);
+    @include flexbox(column, none, none);
     margin-bottom: 38px;
 
     .collapse-title {
@@ -62,7 +62,7 @@
             max-height: 500px;
         }
 
-        p {
+        .collapse-content-text {
             padding: 20px;
         }
     }

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 // import '../../style/components/Collapse/Collapse.css'
@@ -29,15 +28,12 @@ function Collapse({ name, content }) {
         </button>
       </div>
       <div className={`collapse-content ${isOpen ? 'close' : 'open'}`}>
-        {!isOpen && <p>{content}</p>}
+        {!isOpen && (<div className='collapse-content-text'>{content}</div>)}
       </div>
     </div>
   )
 }
 
-Collapse.propTypes = {
-  name: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-}
+
 
 export default Collapse

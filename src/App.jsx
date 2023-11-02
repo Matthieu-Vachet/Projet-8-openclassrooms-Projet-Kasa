@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
 import Logements from './pages/Logements'
@@ -10,8 +9,6 @@ function App() {
   return (
     <Router>
       <div>
-      {/* Composant d'en-tete (Header) */}
-      <Header />
       {/* Routes */}
       <Routes>
         {/* Route pour la page d'accueil (Home) */}

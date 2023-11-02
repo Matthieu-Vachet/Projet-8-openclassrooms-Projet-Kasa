@@ -1,6 +1,3 @@
-import PropTypes from 'prop-types';
-// import '../../style/components/LogementProfil/LogementProfil.scss';
-
 
 function LogementProfil({id, hostName, hostPicture}) {
     return (
@@ -11,10 +8,5 @@ function LogementProfil({id, hostName, hostPicture}) {
     )
 }
 
-LogementProfil.propTypes = {
-    id: PropTypes.string.isRequired,
-    hostName: PropTypes.string.isRequired,
-    hostPicture: PropTypes.string.isRequired
-}
 
 export default LogementProfil

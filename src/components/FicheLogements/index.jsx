@@ -5,33 +5,50 @@ import TitleLogement from '../TitleLogement'
 import LogementTag from '../LogementTags'
 import LogementProfil from '../LogementProfil'
 import LogementRating from '../LogementRating'
-// import '../../style/components/FicheLogements/FicheLogements.scss'
+import Collapse from '../Collapse'
+import '../../style/components/FicheLogements/FicheLogements.scss'
+import '../../style/components/Collapse/Collapse.scss'
 
-
-const FicheLogement = () => {
+const Logement = () => {
   const { id } = useParams()
-  const logements = data.find((logement) => logement.id === id)
-
+  const logement = data.find((logement) => logement.id === id)
 
   return (
     <div>
-      <Carrousel id={logements.id} images={logements.pictures} />
-      <div className='first-container'>
-      <div>
-        <TitleLogement title={logements.title} subtitle={logements.location} />
-        <LogementTag />
+      <Carrousel id={logement.id} images={logement.pictures} />
+
+      <div className="first-container">
+        <div>
+          <TitleLogement title={logement.title} subtitle={logement.location} />
+          <LogementTag />
+        </div>
+
+        <div>
+          <LogementProfil
+            id={logement.id}
+            hostPicture={logement.host.picture}
+            hostName={logement.host.name}
+          />
+          <LogementRating rating={logement.rating} />
+        </div>
       </div>
-      <div>
-        <LogementProfil
-          id={logements.id}
-          hostPicture={logements.host.picture}
-          hostName={logements.host.name}
+
+      <div className="second-container">
+        <Collapse
+          className="collapse-container"
+          name="Description"
+          content={logement.description}
         />
-        <LogementRating rating={logements.rating} />
-      </div>
+        <Collapse
+          className="collapse-container"
+          name="Équipements"
+          content={logement.equipments.map((equipment, index) => (
+            <ul key={index}>{equipment}</ul>
+          ))}
+        />
       </div>
     </div>
   )
 }
 
-export default FicheLogement
+export default Logement

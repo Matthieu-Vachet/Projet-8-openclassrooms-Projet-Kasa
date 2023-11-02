@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-// import '../../style/components/TitleLogement/TitleLogement.scss';
 
 function TitleLogement({ title, subtitle }) {
     return (
@@ -10,9 +8,5 @@ function TitleLogement({ title, subtitle }) {
     )
 }
 
-TitleLogement.propTypes = {
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired
-}
 
 export default TitleLogement

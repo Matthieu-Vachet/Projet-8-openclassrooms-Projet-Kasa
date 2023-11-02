@@ -1,6 +1,6 @@
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PropTypes from 'prop-types';
+
 // import '../../style/components/LogementRating/LogementRating.scss';
 
 
@@ -22,9 +22,6 @@ function LogementRating ({ rating }) {
     );
 }
 
-LogementRating.propTypes = {
-    rating: PropTypes.string.isRequired
-}
 
 export default LogementRating;
 

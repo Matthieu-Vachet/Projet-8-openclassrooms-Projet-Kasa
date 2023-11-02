@@ -42,7 +42,8 @@
       height: 60px;
       @include flexbox(row, none, center);
       top: 275px;
-
+      margin: 0 20px 20px 20px;
+      
       .card-title {
         @include font-montserrat-500(18px, white, 142.6%);
       }

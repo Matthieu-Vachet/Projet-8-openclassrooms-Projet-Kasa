@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-// import '../../style/components/TopBackground/TopBackground.scss'
+
 /**
  * Composant avec image sous header.
  * @returns {JSX.Element} Le composant de fond.
@@ -18,10 +17,5 @@ function TopBackground({ picture, alt, title }) {
   )
 }
 
-TopBackground.propTypes = {
-  picture: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-}
 
 export default TopBackground

@@ -1,5 +1,6 @@
 import TopBackground from '../../components/TopBackground'
 import Cards from '../../components/Cards'
+import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Data from '../../datas/logements.json'
 import ImageBackground from '../../assets/images/IMG.svg'
@@ -13,6 +14,10 @@ import ImageBackground from '../../assets/images/IMG.svg'
 function Home() {
   return (
     <div className="home-container">
+      <header>
+        {/* Composant haut de page (Header) */}
+        <Header />
+      </header>
       <TopBackground
         picture={ImageBackground}
         alt="Image de falaise"

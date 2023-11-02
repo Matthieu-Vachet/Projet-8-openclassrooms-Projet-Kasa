@@ -1,4 +1,16 @@
+@import '../../Variables_Mixins/Variables_Mixins.scss';
 
 .first-container {
     @include flexbox(row, space-between, none);
+}
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+
+    .collapse-container {
+        width: 580px;
+    }
+
+
 }

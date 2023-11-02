@@ -1,5 +1,6 @@
 import TopBackground from '../../components/TopBackground'
 import Collapse from '../../components/Collapse'
+import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ImageBackground from '../../assets/images/Montagnes.svg'
 // import '../../style/pages/Apropos/Apropos.scss'
@@ -7,6 +8,10 @@ import ImageBackground from '../../assets/images/Montagnes.svg'
 function Apropos() {
   return (
     <div>
+      <header>
+        {/* Composant haut de page (Header) */}
+        <Header />
+      </header>
       <main>
         <TopBackground
           picture={ImageBackground}
@@ -15,7 +20,7 @@ function Apropos() {
         />
         <div className="collapse-container-apropos">
           <Collapse
-            name="A propos"
+            name="Fiabilité"
             content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toute informations sont régulièrement vérifiées par nos équipes."
           />
           <Collapse
@@ -24,7 +29,7 @@ function Apropos() {
           />
           <Collapse
             name="Service"
-            content="Kasa est site de réservation de logement qui facilite la recherche et la réservation de logements en ligne, offrant une plateforme sécurisée pour les voyageurs et les propriétaires. Vos informations sont cryptées et protégées par des mesures de sécurité avancées, garantissant la confidentialité de vos données personnelles et de vos transactions. Notre équipe travaille continuellement pour maintenir la fiabilité et l'intégrité de notre plateforme, afin de vous offrir une expérience de réservation sereine et sans souci"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
           />
           <Collapse
             name="Sécurité"
