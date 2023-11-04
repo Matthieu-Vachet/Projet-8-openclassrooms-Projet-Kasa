@@ -1,5 +1,5 @@
-
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+import '../../style/components/Cards/Cards.scss';
 
 /**
  * Retourne un composant Cards (Carte) avec une image et un titre
@@ -13,15 +13,14 @@ function Cards({ title, picture, id }) {
   return (
     <div className="card-content">
       <NavLink to={`/Logements/${id}`}>
-      <img className="card-cover" src={picture} alt={title} />
-      <div className="card-title-container">
-        <span className="card-title">{title}</span>
-      </div>
+        <img className="card-cover" src={picture} alt={title} />
+        <div className="card-title-container">
+          <span className="card-title">{title}</span>
+        </div>
       </NavLink>
     </div>
   )
 }
-
 
 Cards.defaultProps = {
   label: '',

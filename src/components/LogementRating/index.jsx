@@ -1,7 +1,7 @@
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import '../../style/components/LogementRating/LogementRating.scss';
+import '../../style/components/LogementRating/LogementRating.scss';
 
 
 function LogementRating ({ rating }) {

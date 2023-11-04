@@ -1,4 +1,5 @@
 @import '../../Variables_Mixins/Variables_Mixins.scss';
+
 .collapse-container {
     width: 1023px;
     @include flexbox(column, none, none);

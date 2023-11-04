@@ -1,8 +1,8 @@
+@import '../../Variables_Mixins/Variables_Mixins.scss';
 
 .header-container {
-  @include flexbox(row, center, center);
+  @include flexbox(row, space-between, center);
   width: 100%;
-  gap: 700px;
   margin-top: 45px;
   margin-bottom: 50px;
 
@@ -27,5 +27,28 @@
         text-decoration-line: underline;
       }
     }
+  }
+}
+
+@media screen and (min-width:279px) and (max-width: 600px) {
+  .header-container {
+    width: 100%;
+
+    .header-logo {
+      width: 145px;
+    }
+
+    .header-link {
+      gap: 26px;
+
+
+      .text-link {
+        font-size: 12px;
+        text-transform: uppercase;
+        width: auto;
+      }
+    }
+
+
   }
 }

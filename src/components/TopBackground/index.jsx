@@ -1,4 +1,4 @@
-
+import '../../style/components/TopBackground/TopBackground.scss'
 /**
  * Composant avec image sous header.
  * @returns {JSX.Element} Le composant de fond.

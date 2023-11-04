@@ -4,7 +4,8 @@ import FicheLogements from '../../components/FicheLogements'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Error404 from '../../components/Error404'
-// import '../../style/pages/Logements/Logements.scss'
+import '../../style/pages/Logements/Logements.scss'
+import '../../style/setting.scss'
 
 function LogementPage() {
   const { id } = useParams()
@@ -12,10 +13,11 @@ function LogementPage() {
 
   return (
     <div>
-      <header>
+      <header className="defaultstyle">
         {/* Composant haut de page (Header) */}
         <Header />
       </header>
+
       {logement ? (
         <main className="main-logement">
           <FicheLogements />

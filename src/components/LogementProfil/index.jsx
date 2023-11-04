@@ -1,4 +1,4 @@
-
+import '../../style/components/LogementProfil/LogementProfil.scss'
 function LogementProfil({id, hostName, hostPicture}) {
     return (
         <div className="logement-profil-container">

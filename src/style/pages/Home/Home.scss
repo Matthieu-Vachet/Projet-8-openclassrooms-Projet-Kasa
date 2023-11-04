@@ -1,6 +1,28 @@
+@import '../../Variables_Mixins/Variables_Mixins.scss';
 
-.home-container {
-    width: 100%;
-    height: 100vh;
-    @include flexbox(column, none, center);
+
+.cards-container {
+    background: $secondary-color;
+    width: 1240px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin: 43px 0;
+    padding: 40px 0;
+
+}
+
+@media screen and (min-width:375px) and (max-width: 1439px) {
+    
+
+    .cards-container {
+        width: 100%;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+
+    }
 }

@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-// import '../../style/components/Error404/Error404.scss'
+import { Link } from 'react-router-dom';
+import '../../style/components/Error404/Error404.scss';
 
 /**
  * Retourne le composant d'erreur 404 avec un message et un lien vers la page d'accueil.
