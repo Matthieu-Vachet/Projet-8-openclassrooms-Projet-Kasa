@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Apropos from './pages/Apropos'
 import Logements from './pages/Logements'
 import Error from './pages/Error'
-import './style/index.scss'
+// import './style/index.scss'
 
 function App() {
   return (

@@ -15,7 +15,7 @@ import '../../style/setting.scss'
 function Home() {
   return (
     <div>
-      <header className="defaultstyle">
+      <header>
         <Header />
       </header>
       <TopBackground
