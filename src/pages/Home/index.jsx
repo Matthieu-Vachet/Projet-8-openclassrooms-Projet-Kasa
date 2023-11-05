@@ -14,8 +14,8 @@ import '../../style/setting.scss'
 
 function Home() {
   return (
-    <div className="defaultstyle">
-      <header>
+    <div>
+      <header className="defaultstyle">
         <Header />
       </header>
       <TopBackground
@@ -23,7 +23,7 @@ function Home() {
         alt="Image de falaise"
         title="Chez vous, partout et ailleurs"
       />
-      <main className="cards-container">
+      <main className="cards-container defaultstyle">
         {Data.map((logements, index) => (
           <Cards
             key={`${logements.id}-${index}`}

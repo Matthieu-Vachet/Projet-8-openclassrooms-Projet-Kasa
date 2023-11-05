@@ -8,12 +8,12 @@ import '../../style/setting.scss'
 
 function Apropos() {
   return (
-    <div className="defaultstyle">
-      <header>
+    <div>
+      <header className="defaultstyle">
         {/* Composant haut de page (Header) */}
         <Header />
       </header>
-      <main>
+      <main className="apropos-container">
         <TopBackground
           picture={ImageBackground}
           alt="Image de montagnes"

@@ -6,11 +6,11 @@ import '../../style/setting.scss'
 function Error() {
   return (
     <div>
-      <header>
+      <header className="defaultstyle">
         {/* Composant haut de page (Header) */}
         <Header />
       </header>
-      <main>
+      <main className="defaultstyle">
         <Error404 />
       </main>
       <Footer>

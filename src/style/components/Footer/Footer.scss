@@ -4,7 +4,7 @@
   background-color: $black-color;
   width: 100%;
   display: flex;
-  @include flexbox(column, flex-end, center);
+  @include flexbox(column, center, center);
   padding: 66px 0 29px 0;
 
   .footer-logo {
@@ -23,4 +23,19 @@
       text-align: center;
     }
   }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+  .footer-container {
+    .footer-text-container {
+      width: 133px;
+      height: 46px;
+      padding-top: 0;
+
+      .footer-text {
+        @include font-montserrat-500(12px, white, 142.6%);
+      }
+    }
+
+} 
 }
