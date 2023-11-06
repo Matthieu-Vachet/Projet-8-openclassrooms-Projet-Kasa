@@ -51,8 +51,6 @@
 
       .error404-text {
         @include font-montserrat-500(14px, $primary-color, 142.6%);
-        text-decoration-line: underline;
-        cursor: pointer;
       }
     }
   }
