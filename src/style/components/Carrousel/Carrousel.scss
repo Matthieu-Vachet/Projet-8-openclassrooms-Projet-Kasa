@@ -1,7 +1,9 @@
 @import '../../Variables_Mixins/Variables_Mixins.scss';
 
 .carousel {
+  // margin-bottom: 30px;
   position: relative;
+  margin-top: 50px;
   margin-bottom: 30px;
 
   .previousButton {
@@ -71,4 +73,41 @@
     width: 100%;
     @include font-montserrat-500(18px, white, 142.6%);
   }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1100px) {
+  .carousel {
+    display: flex;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+
+    .previousButton {
+      height: 255px;
+      font-size: 20px;
+    }
+
+    .nextButton {
+      height: 255px;
+      font-size: 20px;
+    }
+
+    .carousel-container {
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 335px;
+      height: 255px;
+
+      .carousel-img {
+        width: 335px;
+        height: 255px;
+      }
+  }
+
+
+}
 }

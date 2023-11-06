@@ -14,7 +14,7 @@ const Logement = () => {
   const logement = data.find((logement) => logement.id === id)
 
   return (
-    <div>
+    <div className="fiche-logement-mobile">
       <Carrousel id={logement.id} images={logement.pictures} />
 
       <div className="first-container">
@@ -23,7 +23,7 @@ const Logement = () => {
           <LogementTag />
         </div>
 
-        <div>
+        <div className="logement-profil-mobile">
           <LogementProfil
             id={logement.id}
             hostPicture={logement.host.picture}
