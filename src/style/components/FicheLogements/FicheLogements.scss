@@ -27,9 +27,12 @@
       .logement-profil-mobile {
         display: flex;
         flex-direction: row-reverse;
-        // justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-
+        text-align: center;
+        width: 335px;
+        margin-bottom: 13.5px;
+        gap: 25px;
       }
     }
 
@@ -39,6 +42,12 @@
 
       .collapse-container {
         width: 335px;
+
+        ul {
+          padding: 0;
+          margin: 5px 0;
+        }
+        
       }
     }
   }
