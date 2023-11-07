@@ -6,8 +6,8 @@ import LogementTag from '../LogementTags'
 import LogementProfil from '../LogementProfil'
 import LogementRating from '../LogementRating'
 import Collapse from '../Collapse'
-import '../../style/components/FicheLogements/FicheLogements.scss'
-import '../../style/components/Collapse/Collapse.scss'
+// import '../../style/components/FicheLogements/FicheLogements.scss'
+// import '../../style/components/Collapse/Collapse.scss'
 
 const Logement = () => {
   const { id } = useParams()

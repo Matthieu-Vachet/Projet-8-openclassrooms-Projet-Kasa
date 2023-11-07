@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import '../../style/components/Cards/Cards.scss';
+// import '../../style/components/Cards/Cards.scss';
 
 /**
  * Retourne un composant Cards (Carte) avec une image et un titre

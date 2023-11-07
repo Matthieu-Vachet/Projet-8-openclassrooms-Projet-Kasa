@@ -5,7 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import '../../style/components/Carrousel/Carrousel.scss'
+// import '../../style/components/Carrousel/Carrousel.scss'
 
 // Définition du composant Carrousel qui prend 2 props : 'images' et 'id'
 const Carrousel = ({ images }) => {

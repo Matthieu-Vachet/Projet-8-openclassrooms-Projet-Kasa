@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/logements.json";
-import '../../style/components/LogementTags/LogementTags.scss';
+// import '../../style/components/LogementTags/LogementTags.scss';
 
 
 function LogementTag() {

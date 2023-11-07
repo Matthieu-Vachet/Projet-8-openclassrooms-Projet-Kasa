@@ -1,5 +1,5 @@
 import LogoFooter from '../../assets/logo/logoFooter.png';
-import '../../style/components/Footer/Footer.scss';
+// import '../../style/components/Footer/Footer.scss';
 
 /**
  * Retourne le composant du footer avec le logo et le texte de copyright.

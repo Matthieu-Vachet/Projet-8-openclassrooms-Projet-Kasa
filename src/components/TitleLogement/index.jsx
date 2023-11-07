@@ -1,4 +1,4 @@
-import '../../style/components/TitleLogement/TitleLogement.scss'
+// import '../../style/components/TitleLogement/TitleLogement.scss'
 
 function TitleLogement({ title, subtitle }) {
     return (

@@ -3,8 +3,8 @@ import Collapse from '../../components/Collapse'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import ImageBackground from '../../assets/images/Montagnes.svg'
-import '../../style/pages/Apropos/Apropos.scss'
-import '../../style/setting.scss'
+// import '../../style/pages/Apropos/Apropos.scss'
+// import '../../style/setting.scss'
 
 function Apropos() {
   return (

@@ -1,4 +1,4 @@
-import '../../style/components/LogementProfil/LogementProfil.scss'
+// import '../../style/components/LogementProfil/LogementProfil.scss'
 
 function LogementProfil({id, hostName, hostPicture}) {
     return (

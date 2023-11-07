@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import '../../style/components/Collapse/Collapse.scss';
+// import '../../style/components/Collapse/Collapse.scss';
 
 /**
  * Retourne un composant de collapse avec un titre et un contenu.

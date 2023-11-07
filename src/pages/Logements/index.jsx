@@ -4,7 +4,7 @@ import FicheLogements from '../../components/FicheLogements'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Error404 from '../../components/Error404'
-import '../../style/pages/Logements/Logements.scss'
+// import '../../style/pages/Logements/Logements.scss'
 // import '../../style/setting.scss'
 
 function LogementPage() {
