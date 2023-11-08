@@ -1,13 +1,14 @@
+/**
+ * Composant Header - En-tête avec un logo et des liens de navigation.
+ * @returns {JSX.Element} L'en-tête.
+ */
+
 import { Link, useLocation } from 'react-router-dom'
 import KasaLogo from '../../assets/logo/logo.svg'
 // import '../../style/components/Header/Header.scss'
 
-/**
- * Retourne l'en-tête (Header) avec un logo et des liens de navigation.
- * @returns {JSX.Element} L'en-tête.
- */
-
 function Header() {
+  // Utilisation de useLocation pour déterminer la page actuelle
   const location = useLocation()
 
   return (
@@ -16,6 +17,7 @@ function Header() {
         <img className="header-logo" src={KasaLogo} alt="Logo Kasa" />
       </Link>
       <nav className="header-link">
+        {/* Liens de navigation vers la page d'accueil et la page "À propos" */}
         <Link
           className={`text-link ${location.pathname === '/' ? 'active' : ''}`}
           to="/"

@@ -1,13 +1,16 @@
-import { useState } from 'react';
+/**
+ * Composant Carrousel - Composant de carrousel avec une liste d'images.
+ * @param {Object} props - Les propriétés du Carrousel.
+ * @param {Array} props.images - La liste d'images du Carrousel.
+ * @returns {JSX.Element} Le composant Carrousel.
+ */
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 // import '../../style/components/Carrousel/Carrousel.scss'
 
-// Définition du composant Carrousel qui prend 2 props : 'images' et 'id'
+// Définition du composant Carrousel qui prend une prop 'images'
 const Carrousel = ({ images }) => {
   // Utilisation du hook useState pour gérer l'état du slide actuel
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -33,8 +36,8 @@ const Carrousel = ({ images }) => {
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <div className="carousel-container">
-        {/*Boucle sur le tableau d'images pour les afficher dans le carrousel */}
-        {images.map((image, index) => (
+        {/* Boucle sur le tableau d'images pour les afficher dans le carrousel */
+        images.map((image, index) => (
           <div
             className={`carousel-img ${currentSlide === index ? 'active' : ''}`}
             key={index}
@@ -48,7 +51,7 @@ const Carrousel = ({ images }) => {
             }}
           >
             <img
-              className={` setImg carousel-img`}
+              className={`setImg carousel-img`}
               src={image}
               alt={`Slide ${index}`}
             />

@@ -1,3 +1,8 @@
+/**
+ * Composant Home - Page d'accueil avec une image de fond, des cartes de logements et des données provenant d'un fichier JSON.
+ * @returns {JSX.Element} La page d'accueil.
+ */
+
 import TopBackground from '../../components/TopBackground'
 import Cards from '../../components/Cards'
 import Header from '../../components/Header'
@@ -7,15 +12,11 @@ import ImageBackground from '../../assets/images/IMG.svg'
 // import '../../style/pages/Home/Home.scss'
 // import '../../style/setting.scss'
 
-/**
- * Retourne la page d'accueil avec une image de fond (Background), des cartes de logements (Cards) et des données provenant d'un fichier JSON.
- * @returns {JSX.Element} La page d'accueil.
- */
-
 function Home() {
   return (
     <div>
-      <header>
+      <header className="defaultstyle">
+        {/* Composant haut de page (Header) */}
         <Header />
       </header>
       <TopBackground
@@ -24,6 +25,7 @@ function Home() {
         title="Chez vous, partout et ailleurs"
       />
       <main className="cards-container defaultstyle">
+        {/* Map sur les données provenant du fichier JSON pour afficher des cartes de logements (Cards) */}
         {Data.map((logements, index) => (
           <Cards
             key={`${logements.id}-${index}`}
@@ -35,6 +37,7 @@ function Home() {
         ))}
       </main>
       <footer>
+        {/* Composant de pied de page (Footer) */}
         <Footer />
       </footer>
     </div>

@@ -1,3 +1,8 @@
+/**
+ * Composant LogementPage - Page de détails d'un logement.
+ * @returns {JSX.Element} Le composant LogementPage.
+ */
+
 import { useParams } from 'react-router-dom'
 import data from '../../datas/logements.json'
 import FicheLogements from '../../components/FicheLogements'
@@ -13,21 +18,24 @@ function LogementPage() {
 
   return (
     <div>
-      <header>
+      <header className="defaultstyle">
         {/* Composant haut de page (Header) */}
         <Header />
       </header>
 
       {logement ? (
         <section className="main-logement defaultstyle">
+          {/* Affiche la fiche du logement si le logement existe */}
           <FicheLogements />
         </section>
       ) : (
         <div>
+          {/* Affiche une page d'erreur (404) si le logement n'existe pas */}
           <Error404 />
         </div>
       )}
       <footer>
+        {/* Composant de pied de page (Footer) */}
         <Footer />
       </footer>
     </div>

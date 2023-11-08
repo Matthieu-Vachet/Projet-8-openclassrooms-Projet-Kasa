@@ -1,3 +1,8 @@
+/**
+ * Composant Apropos - Page "À propos" de l'application.
+ * @returns {JSX.Element} Le composant Apropos.
+ */
+
 import TopBackground from '../../components/TopBackground'
 import Collapse from '../../components/Collapse'
 import Header from '../../components/Header'
@@ -14,15 +19,17 @@ function Apropos() {
         <Header />
       </header>
       <main className="apropos-container">
+        {/* Composant d'arrière-plan supérieur (TopBackground) avec image de montagnes */}
         <TopBackground
           picture={ImageBackground}
           alt="Image de montagnes"
           title=""
         />
         <div className="collapse-container-apropos">
+          {/* Plusieurs composants Collapse pour afficher les informations à propos de Kasa */}
           <Collapse
             name="Fiabilité"
-            content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toute informations sont régulièrement vérifiées par nos équipes."
+            content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes informations sont régulièrement vérifiées par nos équipes."
           />
           <Collapse
             name="Respect"
@@ -34,12 +41,13 @@ function Apropos() {
           />
           <Collapse
             name="Sécurité"
-            content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standarts sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+            content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
           />
         </div>
       </main>
       <footer>
-      <Footer />
+        {/* Composant de pied de page (Footer) */}
+        <Footer />
       </footer>
     </div>
   )
