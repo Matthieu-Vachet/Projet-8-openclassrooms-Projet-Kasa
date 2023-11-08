@@ -32,7 +32,8 @@
 
 // Media Queries
 
-@media screen and (min-width: 279px) and (max-width: 600px) {
+// @media screen and (min-width: 279px) and (max-width: 600px)
+@media screen and (min-width: 375px) and (max-width: 1439px) {
   .header-container {
     width: 100%;
     padding-bottom: 0;
