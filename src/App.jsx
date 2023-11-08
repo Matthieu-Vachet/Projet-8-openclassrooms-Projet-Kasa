@@ -9,19 +9,20 @@ function App() {
   return (
     <Router>
       <div>
-      {/* Routes */}
-      <Routes>
-        {/* Route pour la page d'accueil (Home) */}
-        <Route path="/" element={<Home />} />
-        {/* Route pour la page A propos (Apropos) */}
-        <Route path="/apropos" element={<Apropos />} />
-        <Route path='/Logements/:id' Component={Logements} />
-        {/* Route pour la page erreur 404 (Error) */}
-        <Route path="*" element={<Error />} />
-      </Routes>
+        {/* Routes */}
+        <Routes>
+          {/* Route pour la page d'accueil (Home) */}
+          <Route path="/" element={<Home />} />
+          {/* Route pour la page A propos (Apropos) */}
+          <Route path="/apropos" element={<Apropos />} />
+          {/* Route pour la page Logements (Logements) */}
+          <Route path="/Logements/:id" Component={Logements} />
+          {/* Route pour la page erreur 404 (Error) */}
+          <Route path="*" element={<Error />} />
+        </Routes>
       </div>
     </Router>
-  );
-  }
+  )
+}
 
-  export default App
+export default App

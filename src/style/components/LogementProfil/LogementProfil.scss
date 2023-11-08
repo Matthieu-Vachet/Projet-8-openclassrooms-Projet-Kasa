@@ -1,34 +1,36 @@
 @import '../../Variables_Mixins/Variables_Mixins.scss';
 
 .logement-profil-container {
-    width: 167px;
-    height: 64px;
-    @include flexbox(row, space-between, center);
-    gap: 10px;
-    margin-bottom: 21px;
-    margin-left: 23px;
+  width: 167px;
+  height: 64px;
+  @include flexbox(row, space-between, center);
+  gap: 10px;
+  margin-bottom: 21px;
+  margin-left: 23px;
 
-    .host-name {
-        @include font-montserrat-500(18px, $primary-color, 142.6%);
-        text-align: right;
-        margin: 0;
-    }
+  .host-name {
+    @include font-montserrat-500(18px, $primary-color, 142.6%);
+    text-align: right;
+    margin: 0;
+  }
 
-    .host-picture {
-        height: 100%;
-        border-radius: 50%;
-        margin-right: 0;
-    }
+  .host-picture {
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 0;
+  }
 }
 
-@media screen and (min-width: 375px) and (max-width: 1100px) {
-    .logement-profil-container {
-        margin: 0;
+// Media Queries
 
-        .host-name {
-            @include font-montserrat-500(14px, $primary-color, 142.6%);
-            text-align: right;
-            width: 93px;
-        }
+@media screen and (min-width: 375px) and (max-width: 1100px) {
+  .logement-profil-container {
+    margin: 0;
+
+    .host-name {
+      @include font-montserrat-500(14px, $primary-color, 142.6%);
+      text-align: right;
+      width: 93px;
     }
+  }
 }

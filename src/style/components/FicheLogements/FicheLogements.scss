@@ -13,6 +13,8 @@
   }
 }
 
+// Media Queries
+
 @media screen and (min-width: 375px) and (max-width: 1100px) {
   .fiche-logement-mobile {
     display: flex;
@@ -26,9 +28,7 @@
 
       .logement-profil-mobile {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(row-reverse, space-between, center);
         text-align: center;
         width: 335px;
         margin-bottom: 13.5px;
@@ -47,7 +47,6 @@
           padding: 0;
           margin: 5px 0;
         }
-        
       }
     }
   }

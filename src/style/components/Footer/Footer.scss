@@ -25,6 +25,8 @@
   }
 }
 
+// Media Queries
+
 @media screen and (min-width: 375px) and (max-width: 1439px) {
   .footer-container {
     .footer-text-container {
@@ -36,6 +38,5 @@
         @include font-montserrat-500(12px, white, 142.6%);
       }
     }
-
-} 
+  }
 }

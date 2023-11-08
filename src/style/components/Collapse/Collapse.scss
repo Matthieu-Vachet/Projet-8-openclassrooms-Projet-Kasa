@@ -68,6 +68,8 @@
   }
 }
 
+// Media Queries
+
 @media screen and (min-width: 375px) and (max-width: 1100px) {
   .collapse-container {
     width: 335px;
@@ -88,7 +90,5 @@
     .collapse-content {
       @include font-montserrat(13px, $primary-color, 142.6%, none);
     }
-
-
   }
 }

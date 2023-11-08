@@ -30,7 +30,9 @@
   }
 }
 
-@media screen and (min-width:279px) and (max-width: 600px) {
+// Media Queries
+
+@media screen and (min-width: 279px) and (max-width: 600px) {
   .header-container {
     width: 100%;
     padding-bottom: 0;
@@ -44,14 +46,11 @@
     .header-link {
       gap: 26px;
 
-
       .text-link {
         font-size: 12px;
         text-transform: uppercase;
         width: auto;
       }
     }
-
-
   }
 }
