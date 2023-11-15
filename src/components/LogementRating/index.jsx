@@ -4,16 +4,13 @@
  * @returns {JSX.Element} Le composant LogementRating.
  */
 
-import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 // import '../../style/components/LogementRating/LogementRating.scss';
 
 function LogementRating({ rating }) {
   // Calcul du nombre d'étoiles pleines
   const filledStars = Math.floor(rating)
-  // Vérification s'il y a une demi-étoile
-  const hasHalfStar = rating % 1 !== 0
 
   return (
     <div className="logement-rating">
@@ -22,13 +19,9 @@ function LogementRating({ rating }) {
         <span key={index} className="star">
           {index < filledStars ? (
             <FontAwesomeIcon icon={faStar} className="starFilled" />
-          ) : index === filledStars && hasHalfStar ? (
-            <FontAwesomeIcon icon={faStarHalfAlt} />
           ) : (
             <FontAwesomeIcon icon={faStar} className="star-empty" />
           )}
-          {/* {console.log(filledStars)}
-          {console.log(index)} */}
         </span>
       ))}
     </div>
