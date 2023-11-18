@@ -7,7 +7,10 @@
 
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons'
 import '../../style/components/Carrousel/Carrousel.scss'
 
 // Définition du composant Carrousel qui prend une prop 'images'
@@ -32,38 +35,55 @@ const Carrousel = ({ images }) => {
   // Rendu du composant Carrousel
   return (
     <div className="carousel">
-      <button className="previousButton" onClick={previousSlide}>
-        <FontAwesomeIcon icon={faChevronLeft} />
-      </button>
+      
+      {/* Affichage des boutons de navigation du carrousel */}
+      {images.length > 1 && (
+        <button className="previousButton" onClick={previousSlide}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+      )}
+
       <div className="carousel-container">
-        {/* Boucle sur le tableau d'images pour les afficher dans le carrousel */
-        images.map((image, index) => (
-          <div
-            className={`carousel-img ${currentSlide === index ? 'active' : ''}`}
-            key={index}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              opacity: currentSlide === index ? 1 : 0,
-              transition: 'opacity 0.5s ease',
-              zIndex: currentSlide === index ? 1 : 0,
-            }}
-          >
-            <img
-              className={`setImg carousel-img`}
-              src={image}
-              alt={`Slide ${index}`}
-            />
-          </div>
-        ))}
+        {
+          /* Boucle sur le tableau d'images pour les afficher dans le carrousel */
+          images.map((image, index) => (
+            <div
+              className={`carousel-img ${
+                currentSlide === index ? 'active' : ''
+              }`}
+              key={index}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                opacity: currentSlide === index ? 1 : 0,
+                transition: 'opacity 0.5s ease',
+                zIndex: currentSlide === index ? 1 : 0,
+              }}
+            >
+              <img
+                className={`setImg carousel-img`}
+                src={image}
+                alt={`Slide ${index}`}
+              />
+            </div>
+          ))
+        }
       </div>
-      <button className="nextButton" onClick={nextSlide}>
-        <FontAwesomeIcon icon={faChevronRight} />
-      </button>
-      <div className="carousel-counter">
-        {currentSlide + 1} / {images.length}
-      </div>
+
+      {/* Affichage des boutons de navigation du carrousel */}
+      {images.length > 1 && (
+        <button className="nextButton" onClick={nextSlide}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+      )}
+
+      {/* Affichage du counter du carrousel */}
+      {images.length > 1 && (
+        <div className="carousel-counter">
+          {currentSlide + 1} / {images.length}
+        </div>
+      )}
     </div>
   )
 }
