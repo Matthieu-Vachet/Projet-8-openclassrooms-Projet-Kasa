@@ -5,6 +5,9 @@
   position: relative;
   // margin-top: 50px;
   margin-bottom: 30px;
+  width: 100%;
+
+
 
   .previousButton {
     position: absolute;
@@ -24,7 +27,8 @@
 
   .carousel-container {
     border-radius: 25px;
-    width: 1240px;
+    width: 100%;
+
     position: relative;
     height: 415px;
 

@@ -24,7 +24,7 @@ function Home() {
         alt="Image de falaise"
         title="Chez vous, partout et ailleurs"
       />
-      <main className="cards-container defaultstyle">
+      <main className="cards-container">
         {/* Map sur les données provenant du fichier JSON pour afficher des cartes de logements (Cards) */}
         {Data.map((logements, index) => (
           <Cards

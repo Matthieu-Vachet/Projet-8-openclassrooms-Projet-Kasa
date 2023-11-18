@@ -24,7 +24,7 @@ function LogementPage() {
       </header>
 
       {logement ? (
-        <section className="main-logement defaultstyle">
+        <section className="main-logement">
           {/* Affiche la fiche du logement si le logement existe */}
           <FicheLogements />
         </section>
