@@ -15,14 +15,15 @@
 
 // Media Queries
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 768px) {
   .fiche-logement-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     .first-container {
-      width: 335px;
+      width: 90%;
       flex-direction: column;
       margin: 0px;
 
@@ -30,7 +31,7 @@
         display: flex;
         @include flexbox(row-reverse, space-between, center);
         text-align: center;
-        width: 335px;
+        width: 100%;
         margin-bottom: 13.5px;
         gap: 25px;
       }
@@ -38,10 +39,10 @@
 
     .second-container {
       flex-direction: column;
-      width: 335px;
+      width: 90%;
 
       .collapse-container {
-        width: 335px;
+        width: 100%;
 
         ul {
           padding: 0;

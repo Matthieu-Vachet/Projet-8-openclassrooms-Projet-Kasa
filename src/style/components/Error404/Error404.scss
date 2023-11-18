@@ -30,7 +30,7 @@
 
 // Media Queries
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 768px) {
   .error404 {
     gap: 113px;
     @include flexbox(column, center, center);

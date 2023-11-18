@@ -77,10 +77,10 @@
 
 // Media Queries
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 768px) {
   .carousel {
     display: flex;
-    width: 335px;
+    width: 90%;
     height: 255px;
     margin-bottom: 15px;
 
@@ -98,11 +98,11 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 335px;
+      width: 100%;
       height: 255px;
 
       .carousel-img {
-        width: 335px;
+        width: 100%;
         height: 255px;
 
         .setImg {

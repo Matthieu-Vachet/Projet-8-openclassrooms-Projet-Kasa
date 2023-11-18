@@ -1,7 +1,7 @@
 @import '../../Variables_Mixins/Variables_Mixins.scss';
 
 .collapse-container {
-  width: 1023px;
+  width: 70%;
   @include flexbox(column, none, none);
   margin-bottom: 38px;
 
@@ -70,12 +70,17 @@
 
 // Media Queries
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 768px) {
   .collapse-container {
-    width: 335px;
+    width: 90%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     margin-bottom: 20px;
 
     .collapse-title {
+      width: 100%;
       p {
         @include font-montserrat-500(13px, white, 142.6%);
       }
@@ -88,6 +93,7 @@
     }
 
     .collapse-content {
+      width: 100%;
       @include font-montserrat(13px, $primary-color, 142.6%, none);
     }
   }

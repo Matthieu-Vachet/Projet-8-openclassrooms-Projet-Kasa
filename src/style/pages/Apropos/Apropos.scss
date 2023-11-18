@@ -1,4 +1,5 @@
 .collapse-container-apropos {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,7 @@
 
 // Media Queries
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (max-width: 768px) {
   .collapse-container-apropos {
     margin-top: 19px;
   }

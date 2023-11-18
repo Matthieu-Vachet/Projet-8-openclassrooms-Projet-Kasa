@@ -20,9 +20,10 @@ const Logement = () => {
 
   return (
     <div className="fiche-logement-mobile">
+      
       {/* Affichage du carrousel d'images du logement */}
       <Carrousel id={logement.id} images={logement.pictures} />
-
+      
       <div className="first-container">
         <div>
           {/* Affichage du titre et du sous-titre du logement */}
