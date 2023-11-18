@@ -10,7 +10,8 @@
     position: relative;
     border-radius: 25px;
     opacity: 1;
-    width: 1240px;
+    width: 90%;
+    max-width: 1240px;
     height: 223px;
     object-fit: cover;
     mix-blend-mode: darken;
@@ -18,7 +19,7 @@
   }
 
   .background-title {
-    @include font-montserrat-500(48px, white, 142.6%);
+    @include font-montserrat-500(40px, white, 142.6%);
     position: absolute;
   }
 }
