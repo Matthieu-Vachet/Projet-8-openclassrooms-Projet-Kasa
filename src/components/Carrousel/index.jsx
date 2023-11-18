@@ -8,7 +8,7 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-// import '../../style/components/Carrousel/Carrousel.scss'
+import '../../style/components/Carrousel/Carrousel.scss'
 
 // Définition du composant Carrousel qui prend une prop 'images'
 const Carrousel = ({ images }) => {
